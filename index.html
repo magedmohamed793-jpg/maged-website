@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ماجد محمد إسماعيل | محامي</title>
+<meta name="description" content="ماجد محمد إسماعيل - محامي حر، الشرقية. خدمات قانونية في القضايا المدنية، الجنائية، الأحوال الشخصية، العمالية، التجارية، والتعويضات والتنفيذ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #0F1B2D;
+    --navy-deep: #0A131F;
+    --gold: #C9A35E;
+    --gold-bright: #E0BF82;
+    --ivory: #F6F1E7;
+    --teal: #2F4F44;
+    --ink: #1B2430;
+    --line: rgba(201,163,94,0.25);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Tajawal', sans-serif;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{
+    font-family:'Aref Ruqaa', serif;
+    font-weight:700;
+  }
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--teal);
+    outline-offset:3px;
+  }
+
+  /* ===== Texture backdrop ===== */
+  .paper-texture{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:0.035;
+    background-image:
+      repeating-linear-gradient(0deg, #000 0px, transparent 1px, transparent 2px),
+      repeating-linear-gradient(90deg, #000 0px, transparent 1px, transparent 2px);
+    background-size: 3px 3px;
+    z-index:0;
+  }
+
+  /* ===== Nav ===== */
+  nav{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:100;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 6vw;
+    background:rgba(246,241,231,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+    transition:padding 0.3s ease;
+  }
+  .nav-name{
+    font-family:'Aref Ruqaa', serif;
+    font-size:1.3rem;
+    color:var(--navy);
+    font-weight:700;
+  }
+  .nav-links{
+    display:flex;
+    gap:28px;
+    font-size:0.95rem;
+    font-weight:500;
+  }
+  .nav-links a{
+    color:var(--navy);
+    position:relative;
+    padding-bottom:4px;
+  }
+  .nav-links a::after{
+    content:'';
+    position:absolute;
+    bottom:0; right:0; left:0;
+    height:2px;
+    background:var(--gold);
+    transform:scaleX(0);
+    transform-origin:right;
+    transition:transform 0.3s ease;
+  }
+  .nav-links a:hover::after{transform:scaleX(1);}
+  @media (max-width:760px){
+    .nav-links{display:none;}
+  }
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,163,94,0.12), transparent 60%),
+      var(--navy);
+    color:var(--ivory);
+    padding:120px 6vw 80px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+      repeating-linear-gradient(45deg, transparent, transparent 38px, rgba(201,163,94,0.04) 38px, rgba(201,163,94,0.04) 39px);
+    pointer-events:none;
+  }
+  .seal{
+    width:118px;
+    height:118px;
+    border-radius:50%;
+    border:2px solid var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:28px;
+    position:relative;
+    animation: sealIn 1s cubic-bezier(.2,.9,.25,1) both;
+  }
+  .seal::before{
+    content:'';
+    position:absolute;
+    inset:8px;
+    border:1px solid var(--gold);
+    border-radius:50%;
+    opacity:0.6;
+  }
+  .seal svg{width:52px;height:52px;}
+  @keyframes sealIn{
+    from{opacity:0; transform:scale(0.7) rotate(-8deg);}
+    to{opacity:1; transform:scale(1) rotate(0deg);}
+  }
+  .eyebrow{
+    color:var(--gold-bright);
+    letter-spacing:0.15em;
+    font-size:0.85rem;
+    font-weight:700;
+    margin-bottom:18px;
+    animation: fadeUp 0.8s ease 0.2s both;
+  }
+  .hero h1{
+    font-size:clamp(2.6rem, 7vw, 5rem);
+    line-height:1.15;
+    margin-bottom:14px;
+    animation: fadeUp 0.8s ease 0.35s both;
+  }
+  .hero .role{
+    font-size:clamp(1.1rem, 2.4vw, 1.5rem);
+    color:var(--gold-bright);
+    font-weight:500;
+    margin-bottom:8px;
+    animation: fadeUp 0.8s ease 0.5s both;
+  }
+  .hero .sub{
+    max-width:560px;
+    color:rgba(246,241,231,0.75);
+    font-size:1.02rem;
+    line-height:1.9;
+    margin-top:18px;
+    animation: fadeUp 0.8s ease 0.65s both;
+  }
+  @keyframes fadeUp{
+    from{opacity:0; transform:translateY(18px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+  .hero-ctas{
+    display:flex;
+    gap:16px;
+    margin-top:36px;
+    flex-wrap:wrap;
+    justify-content:center;
+    animation: fadeUp 0.8s ease 0.8s both;
+  }
+  .btn{
+    padding:14px 32px;
+    border-radius:2px;
+    font-weight:700;
+    font-size:0.95rem;
+    transition:all 0.25s ease;
+    display:inline-block;
+    border:1px solid transparent;
+  }
+  .btn-gold{
+    background:var(--gold);
+    color:var(--navy-deep);
+  }
+  .btn-gold:hover{
+    background:var(--gold-bright);
+    transform:translateY(-2px);
+  }
+  .btn-outline{
+    border-color:rgba(246,241,231,0.4);
+    color:var(--ivory);
+  }
+  .btn-outline:hover{
+    border-color:var(--gold);
+    color:var(--gold-bright);
+    transform:translateY(-2px);
+  }
+
+  /* ===== Sections base ===== */
+  section{
+    position:relative;
+    z-index:1;
+    padding:100px 6vw;
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .section-head{
+    text-align:center;
+    margin-bottom:56px;
+  }
+  .section-head .eyebrow{color:var(--teal);}
+  .section-head h2{
+    font-size:clamp(1.9rem,4vw,2.6rem);
+    color:var(--navy);
+  }
+  .divider{
+    width:54px;
+    height:3px;
+    background:var(--gold);
+    margin:18px auto 0;
+  }
+
+  /* ===== About ===== */
+  .about-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+  .about-text p{
+    font-size:1.08rem;
+    line-height:2.1;
+    color:var(--ink);
+    margin-bottom:18px;
+  }
+  .about-text strong{color:var(--navy);}
+  .creed{
+    background:var(--navy);
+    color:var(--ivory);
+    padding:34px 36px;
+    border-radius:4px;
+    position:relative;
+    margin-top:14px;
+    font-family:'Aref Ruqaa', serif;
+    font-size:1.3rem;
+    line-height:1.9;
+    text-align:center;
+  }
+  .creed::before, .creed::after{
+    content:'"';
+    color:var(--gold);
+    font-size:2rem;
+    font-family:Georgia, serif;
+  }
+
+  /* ===== Practice areas (legal "articles") ===== */
+  .articles{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .article{
+    background:var(--ivory);
+    padding:34px 28px;
+    transition:background 0.3s ease;
+  }
+  .article:hover{background:#fffdf8;}
+  .article .num{
+    font-family:'Aref Ruqaa', serif;
+    color:var(--gold);
+    font-size:0.9rem;
+    letter-spacing:0.08em;
+    margin-bottom:10px;
+    display:block;
+  }
+  .article h3{
+    font-size:1.25rem;
+    color:var(--navy);
+    margin-bottom:10px;
+  }
+  .article p{
+    font-size:0.92rem;
+    line-height:1.8;
+    color:#52596A;
+  }
+
+  /* ===== Values strip ===== */
+  .values{
+    background:var(--teal);
+    color:var(--ivory);
+  }
+  .values-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:32px;
+    text-align:center;
+  }
+  .values h3{
+    font-size:1.1rem;
+    color:var(--gold-bright);
+    margin-bottom:8px;
+  }
+  .values p{
+    font-size:0.88rem;
+    color:rgba(246,241,231,0.78);
+    line-height:1.7;
+  }
+
+  /* ===== Contact ===== */
+  .contact{
+    background:var(--navy);
+    color:var(--ivory);
+  }
+  .contact .section-head .eyebrow{color:var(--gold-bright);}
+  .contact .section-head h2{color:var(--ivory);}
+  .contact-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:36px;
+  }
+  .contact-info{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    justify-content:center;
+  }
+  .contact-card{
+    border:1px solid rgba(201,163,94,0.3);
+    padding:18px 26px;
+    border-radius:4px;
+    min-width:220px;
+    text-align:center;
+    transition:border-color 0.3s ease, transform 0.3s ease;
+  }
+  .contact-card:hover{
+    border-color:var(--gold);
+    transform:translateY(-3px);
+  }
+  .contact-card .label{
+    color:var(--gold-bright);
+    font-size:0.78rem;
+    letter-spacing:0.1em;
+    margin-bottom:6px;
+    display:block;
+  }
+  .contact-card .value{
+    font-size:1.05rem;
+    font-weight:700;
+    direction:ltr;
+    display:inline-block;
+  }
+  .socials{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  .social-pill{
+    border:1px solid rgba(246,241,231,0.25);
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:0.88rem;
+    font-weight:500;
+    transition:all 0.25s ease;
+  }
+  .social-pill:hover{
+    background:var(--gold);
+    color:var(--navy-deep);
+    border-color:var(--gold);
+  }
+
+  footer{
+    text-align:center;
+    padding:30px 6vw 40px;
+    background:var(--navy-deep);
+    color:rgba(246,241,231,0.5);
+    font-size:0.82rem;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+</style>
+</head>
+<body>
+
+<div class="paper-texture"></div>
+
+<nav>
+  <div class="nav-name">ماجد محمد إسماعيل</div>
+  <div class="nav-links">
+    <a href="#about">عن المكتب</a>
+    <a href="#practice">مجالات العمل</a>
+    <a href="#contact">تواصل معي</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="seal" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#E0BF82" stroke-width="1.4">
+      <path d="M12 3v18M5 7l-3 6a3 3 0 006 0l-3-6zM19 7l-3 6a3 3 0 006 0l-3-6zM4 7h16M8 7l4-3 4 3M5 21h14"/>
+    </svg>
+  </div>
+  <p class="eyebrow">محامٍ مقبول أمام المحاكم — الشرقية</p>
+  <h1>ماجد محمد إسماعيل</h1>
+  <p class="role">محامٍ حر · خريج كلية الحقوق، جامعة الزقازيق</p>
+  <p class="sub">
+    خدمات قانونية في القضايا المدنية، الجنائية، الأحوال الشخصية، العمالية،
+    التجارية، والتعويضات والتنفيذ — بمتابعة جادة من أول خطوة لحد آخر الإجراءات.
+  </p>
+  <div class="hero-ctas">
+    <a href="#contact" class="btn btn-gold">احجز استشارة</a>
+    <a href="#practice" class="btn btn-outline">مجالات العمل</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="section-head">
+    <p class="eyebrow">عن المحامي</p>
+    <h2>الثقة قبل أي حاجة</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        أنا <strong>ماجد محمد إسماعيل</strong>، محامٍ حر وخريج كلية الحقوق – جامعة الزقازيق.
+        بقدّم خدمات قانونية في جميع أنواع القضايا، سواء كانت مدنية، جنائية، أحوال شخصية،
+        عمالية، تجارية، أو قضايا التعويضات والتنفيذ.
+      </p>
+      <p>
+        هدفي الأول هو الحفاظ على حقوق موكليّ، وتقديم استشارات قانونية واضحة، ومتابعة
+        القضايا بكل جدية واهتمام من أول خطوة لحد انتهاء الإجراءات. باهتم بدراسة كل قضية
+        كويس، واختيار أفضل الحلول القانونية المناسبة لكل حالة، مع الالتزام بالسرية
+        والمصداقية واحترام مواعيد العمل.
+      </p>
+      <div class="creed">
+        المحامي الناجح هو اللي بيكسب ثقة موكليه قبل أي حاجة
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="practice">
+  <div class="section-head">
+    <p class="eyebrow">مجالات العمل</p>
+    <h2>القضايا التي أتولاها</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="articles">
+    <div class="article">
+      <span class="num">مادة ١</span>
+      <h3>القضايا المدنية</h3>
+      <p>متابعة كاملة للنزاعات المدنية وحماية حقوق الأطراف من أول جلسة.</p>
+    </div>
+    <div class="article">
+      <span class="num">مادة ٢</span>
+      <h3>القضايا الجنائية</h3>
+      <p>دفاع جاد ومتابعة دقيقة لكل مراحل القضية أمام النيابة والمحكمة.</p>
+    </div>
+    <div class="article">
+      <span class="num">مادة ٣</span>
+      <h3>الأحوال الشخصية</h3>
+      <p>قضايا الأسرة بحساسية ومراعاة، مع الحفاظ على حقوق كل الأطراف.</p>
+    </div>
+    <div class="article">
+      <span class="num">مادة ٤</span>
+      <h3>القضايا العمالية</h3>
+      <p>حماية حقوق العامل أو صاحب العمل في النزاعات والمستحقات.</p>
+    </div>
+    <div class="article">
+      <span class="num">مادة ٥</span>
+      <h3>القضايا التجارية</h3>
+      <p>استشارات ومتابعة للمنازعات التجارية وعقود الشركات.</p>
+    </div>
+    <div class="article">
+      <span class="num">مادة ٦</span>
+      <h3>التعويضات والتنفيذ</h3>
+      <p>مطالبات التعويض ومتابعة إجراءات التنفيذ حتى استيفاء الحق.</p>
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="section-head">
+    <p class="eyebrow">قيم العمل</p>
+    <h2 style="color:#F6F1E7;">إزاي بشتغل</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="values-grid">
+    <div>
+      <h3>السرية</h3>
+      <p>كل تفاصيل قضيتك محفوظة وما بتتشارك مع حد.</p>
+    </div>
+    <div>
+      <h3>المصداقية</h3>
+      <p>رأي قانوني واضح وصريح من أول استشارة.</p>
+    </div>
+    <div>
+      <h3>الالتزام بالمواعيد</h3>
+      <p>احترام كامل لمواعيد الجلسات والإجراءات.</p>
+    </div>
+    <div>
+      <h3>المتابعة الجادة</h3>
+      <p>متابعة مستمرة لحد ما توصل لأفضل نتيجة ممكنة.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-head">
+    <p class="eyebrow">تواصل معي</p>
+    <h2>محتاج استشارة قانونية؟</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <div class="contact-card">
+        <span class="label">المكان</span>
+        <span class="value" style="direction:rtl;">الشرقية، مصر</span>
+      </div>
+    </div>
+    <div class="socials">
+      <a class="social-pill" href="https://www.facebook.com/maged.mohamedesmil/" target="_blank" rel="noopener">فيسبوك</a>
+      <a class="social-pill" href="https://www.instagram.com/maged.mohamedesmil" target="_blank" rel="noopener">إنستجرام</a>
+      <a class="social-pill" href="https://tiktok.com/@magedmohamedesmil" target="_blank" rel="noopener">تيك توك</a>
+      <a class="social-pill" href="https://youtube.com/@magedmohamedd" target="_blank" rel="noopener">يوتيوب</a>
+      <a class="social-pill" href="https://x.com/magedmohamedesm" target="_blank" rel="noopener">X</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> ماجد محمد إسماعيل — محامٍ حر. جميع الحقوق محفوظة.
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
