@@ -1,563 +1,564 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ماجد محمد إسماعيل | محامي</title>
-<meta name="description" content="ماجد محمد إسماعيل - محامي حر، الشرقية. خدمات قانونية في القضايا المدنية، الجنائية، الأحوال الشخصية، العمالية، التجارية، والتعويضات والتنفيذ.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy: #0F1B2D;
-    --navy-deep: #0A131F;
-    --gold: #C9A35E;
-    --gold-bright: #E0BF82;
-    --ivory: #F6F1E7;
-    --teal: #2F4F44;
-    --ink: #1B2430;
-    --line: rgba(201,163,94,0.25);
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--ivory);
-    color:var(--ink);
-    font-family:'Tajawal', sans-serif;
-    overflow-x:hidden;
-  }
-  h1,h2,h3,.display{
-    font-family:'Aref Ruqaa', serif;
-    font-weight:700;
-  }
-  a{text-decoration:none;color:inherit;}
-  img{max-width:100%;display:block;}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="المكتب القانوني للأستاذ ماجد محمد إسماعيل - تقديم كافة الاستشارات والخدمات القانونية، القضايا المدنية والجنائية والأحوال الشخصية والتجارية.">
+    <title>مكتب المحامي ماجد محمد إسماعيل للاستشارات القانونية</title>
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1b365d;
+            --secondary-color: #c5a059;
+            --dark-color: #0f1e36;
+            --light-bg: #f8f9fa;
+        }
 
-  /* focus visibility */
-  a:focus-visible, button:focus-visible{
-    outline:3px solid var(--teal);
-    outline-offset:3px;
-  }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
 
-  /* ===== Texture backdrop ===== */
-  .paper-texture{
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    opacity:0.035;
-    background-image:
-      repeating-linear-gradient(0deg, #000 0px, transparent 1px, transparent 2px),
-      repeating-linear-gradient(90deg, #000 0px, transparent 1px, transparent 2px);
-    background-size: 3px 3px;
-    z-index:0;
-  }
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
 
-  /* ===== Nav ===== */
-  nav{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index:100;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 6vw;
-    background:rgba(246,241,231,0.88);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-    transition:padding 0.3s ease;
-  }
-  .nav-name{
-    font-family:'Aref Ruqaa', serif;
-    font-size:1.3rem;
-    color:var(--navy);
-    font-weight:700;
-  }
-  .nav-links{
-    display:flex;
-    gap:28px;
-    font-size:0.95rem;
-    font-weight:500;
-  }
-  .nav-links a{
-    color:var(--navy);
-    position:relative;
-    padding-bottom:4px;
-  }
-  .nav-links a::after{
-    content:'';
-    position:absolute;
-    bottom:0; right:0; left:0;
-    height:2px;
-    background:var(--gold);
-    transform:scaleX(0);
-    transform-origin:right;
-    transition:transform 0.3s ease;
-  }
-  .nav-links a:hover::after{transform:scaleX(1);}
-  @media (max-width:760px){
-    .nav-links{display:none;}
-  }
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #ffffff !important;
+        }
 
-  /* ===== Hero ===== */
-  .hero{
-    position:relative;
-    min-height:100svh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    background:
-      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,163,94,0.12), transparent 60%),
-      var(--navy);
-    color:var(--ivory);
-    padding:120px 6vw 80px;
-    overflow:hidden;
-  }
-  .hero::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background:
-      repeating-linear-gradient(45deg, transparent, transparent 38px, rgba(201,163,94,0.04) 38px, rgba(201,163,94,0.04) 39px);
-    pointer-events:none;
-  }
-  .seal{
-    width:118px;
-    height:118px;
-    border-radius:50%;
-    border:2px solid var(--gold);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:28px;
-    position:relative;
-    animation: sealIn 1s cubic-bezier(.2,.9,.25,1) both;
-  }
-  .seal::before{
-    content:'';
-    position:absolute;
-    inset:8px;
-    border:1px solid var(--gold);
-    border-radius:50%;
-    opacity:0.6;
-  }
-  .seal svg{width:52px;height:52px;}
-  @keyframes sealIn{
-    from{opacity:0; transform:scale(0.7) rotate(-8deg);}
-    to{opacity:1; transform:scale(1) rotate(0deg);}
-  }
-  .eyebrow{
-    color:var(--gold-bright);
-    letter-spacing:0.15em;
-    font-size:0.85rem;
-    font-weight:700;
-    margin-bottom:18px;
-    animation: fadeUp 0.8s ease 0.2s both;
-  }
-  .hero h1{
-    font-size:clamp(2.6rem, 7vw, 5rem);
-    line-height:1.15;
-    margin-bottom:14px;
-    animation: fadeUp 0.8s ease 0.35s both;
-  }
-  .hero .role{
-    font-size:clamp(1.1rem, 2.4vw, 1.5rem);
-    color:var(--gold-bright);
-    font-weight:500;
-    margin-bottom:8px;
-    animation: fadeUp 0.8s ease 0.5s both;
-  }
-  .hero .sub{
-    max-width:560px;
-    color:rgba(246,241,231,0.75);
-    font-size:1.02rem;
-    line-height:1.9;
-    margin-top:18px;
-    animation: fadeUp 0.8s ease 0.65s both;
-  }
-  @keyframes fadeUp{
-    from{opacity:0; transform:translateY(18px);}
-    to{opacity:1; transform:translateY(0);}
-  }
-  .hero-ctas{
-    display:flex;
-    gap:16px;
-    margin-top:36px;
-    flex-wrap:wrap;
-    justify-content:center;
-    animation: fadeUp 0.8s ease 0.8s both;
-  }
-  .btn{
-    padding:14px 32px;
-    border-radius:2px;
-    font-weight:700;
-    font-size:0.95rem;
-    transition:all 0.25s ease;
-    display:inline-block;
-    border:1px solid transparent;
-  }
-  .btn-gold{
-    background:var(--gold);
-    color:var(--navy-deep);
-  }
-  .btn-gold:hover{
-    background:var(--gold-bright);
-    transform:translateY(-2px);
-  }
-  .btn-outline{
-    border-color:rgba(246,241,231,0.4);
-    color:var(--ivory);
-  }
-  .btn-outline:hover{
-    border-color:var(--gold);
-    color:var(--gold-bright);
-    transform:translateY(-2px);
-  }
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
 
-  /* ===== Sections base ===== */
-  section{
-    position:relative;
-    z-index:1;
-    padding:100px 6vw;
-    max-width:1080px;
-    margin:0 auto;
-  }
-  .section-head{
-    text-align:center;
-    margin-bottom:56px;
-  }
-  .section-head .eyebrow{color:var(--teal);}
-  .section-head h2{
-    font-size:clamp(1.9rem,4vw,2.6rem);
-    color:var(--navy);
-  }
-  .divider{
-    width:54px;
-    height:3px;
-    background:var(--gold);
-    margin:18px auto 0;
-  }
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
 
-  /* ===== About ===== */
-  .about-grid{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:32px;
-  }
-  .about-text p{
-    font-size:1.08rem;
-    line-height:2.1;
-    color:var(--ink);
-    margin-bottom:18px;
-  }
-  .about-text strong{color:var(--navy);}
-  .creed{
-    background:var(--navy);
-    color:var(--ivory);
-    padding:34px 36px;
-    border-radius:4px;
-    position:relative;
-    margin-top:14px;
-    font-family:'Aref Ruqaa', serif;
-    font-size:1.3rem;
-    line-height:1.9;
-    text-align:center;
-  }
-  .creed::before, .creed::after{
-    content:'"';
-    color:var(--gold);
-    font-size:2rem;
-    font-family:Georgia, serif;
-  }
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
+            color: white;
+            padding: 90px 0 80px 0;
+            position: relative;
+        }
 
-  /* ===== Practice areas (legal "articles") ===== */
-  .articles{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-    gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
-  }
-  .article{
-    background:var(--ivory);
-    padding:34px 28px;
-    transition:background 0.3s ease;
-  }
-  .article:hover{background:#fffdf8;}
-  .article .num{
-    font-family:'Aref Ruqaa', serif;
-    color:var(--gold);
-    font-size:0.9rem;
-    letter-spacing:0.08em;
-    margin-bottom:10px;
-    display:block;
-  }
-  .article h3{
-    font-size:1.25rem;
-    color:var(--navy);
-    margin-bottom:10px;
-  }
-  .article p{
-    font-size:0.92rem;
-    line-height:1.8;
-    color:#52596A;
-  }
+        .hero-title {
+            font-weight: 800;
+            font-size: 2.5rem;
+            line-height: 1.3;
+        }
 
-  /* ===== Values strip ===== */
-  .values{
-    background:var(--teal);
-    color:var(--ivory);
-  }
-  .values-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:32px;
-    text-align:center;
-  }
-  .values h3{
-    font-size:1.1rem;
-    color:var(--gold-bright);
-    margin-bottom:8px;
-  }
-  .values p{
-    font-size:0.88rem;
-    color:rgba(246,241,231,0.78);
-    line-height:1.7;
-  }
+        .hero-subtitle {
+            color: var(--secondary-color);
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
 
-  /* ===== Contact ===== */
-  .contact{
-    background:var(--navy);
-    color:var(--ivory);
-  }
-  .contact .section-head .eyebrow{color:var(--gold-bright);}
-  .contact .section-head h2{color:var(--ivory);}
-  .contact-wrap{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:36px;
-  }
-  .contact-info{
-    display:flex;
-    flex-wrap:wrap;
-    gap:18px;
-    justify-content:center;
-  }
-  .contact-card{
-    border:1px solid rgba(201,163,94,0.3);
-    padding:18px 26px;
-    border-radius:4px;
-    min-width:220px;
-    text-align:center;
-    transition:border-color 0.3s ease, transform 0.3s ease;
-  }
-  .contact-card:hover{
-    border-color:var(--gold);
-    transform:translateY(-3px);
-  }
-  .contact-card .label{
-    color:var(--gold-bright);
-    font-size:0.78rem;
-    letter-spacing:0.1em;
-    margin-bottom:6px;
-    display:block;
-  }
-  .contact-card .value{
-    font-size:1.05rem;
-    font-weight:700;
-    direction:ltr;
-    display:inline-block;
-  }
-  .socials{
-    display:flex;
-    gap:16px;
-    flex-wrap:wrap;
-    justify-content:center;
-  }
-  .social-pill{
-    border:1px solid rgba(246,241,231,0.25);
-    padding:10px 22px;
-    border-radius:30px;
-    font-size:0.88rem;
-    font-weight:500;
-    transition:all 0.25s ease;
-  }
-  .social-pill:hover{
-    background:var(--gold);
-    color:var(--navy-deep);
-    border-color:var(--gold);
-  }
+        .btn-gold {
+            background-color: var(--secondary-color);
+            color: #ffffff;
+            font-weight: 700;
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: none;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
 
-  footer{
-    text-align:center;
-    padding:30px 6vw 40px;
-    background:var(--navy-deep);
-    color:rgba(246,241,231,0.5);
-    font-size:0.82rem;
-  }
+        .btn-gold:hover {
+            background-color: #b08d46;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
 
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
-  }
-</style>
+        .btn-outline-gold {
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            font-weight: 700;
+            padding: 10px 28px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-outline-gold:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        /* Section Titles */
+        .section-title {
+            position: relative;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Service Cards */
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            background: #ffffff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+
+        .service-icon {
+            width: 65px;
+            height: 65px;
+            background-color: rgba(27, 54, 93, 0.08);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* Media Section */
+        .media-section {
+            background-color: #f4f6f9;
+        }
+
+        .media-card {
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .media-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 6px;
+            height: 100%;
+            background-color: var(--secondary-color);
+        }
+
+        /* Social Buttons */
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            color: white !important;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+        }
+
+        .btn-facebook { background-color: #1877f2; }
+        .btn-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .btn-tiktok { background-color: #000000; }
+        .btn-youtube { background-color: #ff0000; }
+        .btn-x { background-color: #000000; }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: #d1d5db;
+        }
+
+        footer a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: var(--secondary-color);
+        }
+    </style>
 </head>
 <body>
 
-<div class="paper-texture"></div>
+    <!-- القائمة العلوية Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-bank2 text-warning me-2 fs-3"></i>
+                <span>مكتب المحامي ماجد محمد إسماعيل</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">عن المكتب</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#services">خدماتنا القانونية</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#media">في الصحافة والإعلام</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<nav>
-  <div class="nav-name">ماجد محمد إسماعيل</div>
-  <div class="nav-links">
-    <a href="#about">عن المكتب</a>
-    <a href="#practice">مجالات العمل</a>
-    <a href="#contact">تواصل معي</a>
-  </div>
-</nav>
+    <!-- قسم الواجهة Main Banner -->
+    <section id="home" class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">رؤية قانونية ترتكز على العدالة</span>
+                    <h1 class="hero-title mb-3">الأستاذ / ماجد محمد إسماعيل</h1>
+                    <p class="hero-subtitle mb-4">محامٍ واستشاري قانوني — خريج كلية الحقوق جامعة الزقازيق</p>
+                    <p class="lead text-light mb-4 fs-6 opacity-90">
+                        نقدم خدمات واستشارات قانونية متكاملة للأفراد والشركات في مختلف مجالات التقاضي، مع الالتزام التام بمهنية ودقة الممارسة وتوفير الحماية القانونية الشاملة لموكلينا.
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#contact" class="btn btn-gold shadow">طلب استشارة قانونية</a>
+                        <a href="#media" class="btn btn-outline-gold">عن المكتب في الإعلام</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<header class="hero">
-  <div class="seal" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#E0BF82" stroke-width="1.4">
-      <path d="M12 3v18M5 7l-3 6a3 3 0 006 0l-3-6zM19 7l-3 6a3 3 0 006 0l-3-6zM4 7h16M8 7l4-3 4 3M5 21h14"/>
-    </svg>
-  </div>
-  <p class="eyebrow">محامٍ مقبول أمام المحاكم — الشرقية</p>
-  <h1>ماجد محمد إسماعيل</h1>
-  <p class="role">محامٍ حر · خريج كلية الحقوق، جامعة الزقازيق</p>
-  <p class="sub">
-    خدمات قانونية في القضايا المدنية، الجنائية، الأحوال الشخصية، العمالية،
-    التجارية، والتعويضات والتنفيذ — بمتابعة جادة من أول خطوة لحد آخر الإجراءات.
-  </p>
-  <div class="hero-ctas">
-    <a href="#contact" class="btn btn-gold">احجز استشارة</a>
-    <a href="#practice" class="btn btn-outline">مجالات العمل</a>
-  </div>
-</header>
+    <!-- قسم عن المحامي About -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title text-start mb-4">نبذة عن المحامي والمكتب</h2>
+                    <p class="text-secondary leading-relaxed mb-3">
+                        يسعى مكتب الأستاذ <strong>ماجد محمد إسماعيل</strong> (خريج كلية الحقوق - جامعة الزقازيق) إلى تقديم منظومة من الخدمات القانونية الاحترافية التي تواكب تطورات المنظومة القضائية والتشريعية في مصر.
+                    </p>
+                    <p class="text-secondary leading-relaxed mb-4">
+                        نعتمد في أداء عملنا على دراسة دقيقة لكل قضية وتحليل تفاصيلها من كافة الأبعاد القانونية لإعداد دفاع متكامل واختيار المسار الأكثر أماناً ونجاحاً للموكل، مع الالتزام التام بمبادئ السرية، الشفافية، والمصداقية.
+                    </p>
+                    <div class="row g-3 text-center">
+                        <div class="col-6 col-md-4">
+                            <div class="p-3 border rounded-3 bg-light">
+                                <i class="bi bi-shield-check text-primary fs-2"></i>
+                                <h6 class="fw-bold mt-2 mb-0">سرية تامة</h6>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="p-3 border rounded-3 bg-light">
+                                <i class="bi bi-briefcase text-primary fs-2"></i>
+                                <h6 class="fw-bold mt-2 mb-0">خبرة متخصصة</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="p-3 border rounded-3 bg-light">
+                                <i class="bi bi-clock-history text-primary fs-2"></i>
+                                <h6 class="fw-bold mt-2 mb-0">دقة بالإنهاء</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="p-4 rounded-4 text-white shadow-lg" style="background-color: var(--primary-color);">
+                        <h4 class="fw-bold mb-3 border-bottom border-secondary pb-2 text-warning"><i class="bi bi-card-checklist me-2"></i> رؤيتنا المهنية</h4>
+                        <ul class="list-unstyled mb-0 d-grid gap-3">
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill text-warning me-2 mt-1"></i>
+                                <span><strong>حماية حقوق الموكلين:</strong> وضع مصلحة الموكل القانونية دائماً في مقدمة أولوياتنا.</span>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill text-warning me-2 mt-1"></i>
+                                <span><strong>الوقاية القانونية:</strong> تقديم استشارات تجنب الأفراد والشركات الوقوع في النزاعات.</span>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill text-warning me-2 mt-1"></i>
+                                <span><strong>دراسة متعمقة:</strong> صياغة وتحليل كل بنود الدفاع بحرفية عالية.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-  <div class="section-head">
-    <p class="eyebrow">عن المحامي</p>
-    <h2>الثقة قبل أي حاجة</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="about-grid">
-    <div class="about-text">
-      <p>
-        أنا <strong>ماجد محمد إسماعيل</strong>، محامٍ حر وخريج كلية الحقوق – جامعة الزقازيق.
-        بقدّم خدمات قانونية في جميع أنواع القضايا، سواء كانت مدنية، جنائية، أحوال شخصية،
-        عمالية، تجارية، أو قضايا التعويضات والتنفيذ.
-      </p>
-      <p>
-        هدفي الأول هو الحفاظ على حقوق موكليّ، وتقديم استشارات قانونية واضحة، ومتابعة
-        القضايا بكل جدية واهتمام من أول خطوة لحد انتهاء الإجراءات. باهتم بدراسة كل قضية
-        كويس، واختيار أفضل الحلول القانونية المناسبة لكل حالة، مع الالتزام بالسرية
-        والمصداقية واحترام مواعيد العمل.
-      </p>
-      <div class="creed">
-        المحامي الناجح هو اللي بيكسب ثقة موكليه قبل أي حاجة
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- قسم الخدمات Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title">مجالات التخصص والخدمات القانونية</h2>
+                <p class="text-muted">تغطية قانونية شاملة ومتخصصة لمختلف أنواع القضايا والاستشارات</p>
+            </div>
 
-<section id="practice">
-  <div class="section-head">
-    <p class="eyebrow">مجالات العمل</p>
-    <h2>القضايا التي أتولاها</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="articles">
-    <div class="article">
-      <span class="num">مادة ١</span>
-      <h3>القضايا المدنية</h3>
-      <p>متابعة كاملة للنزاعات المدنية وحماية حقوق الأطراف من أول جلسة.</p>
-    </div>
-    <div class="article">
-      <span class="num">مادة ٢</span>
-      <h3>القضايا الجنائية</h3>
-      <p>دفاع جاد ومتابعة دقيقة لكل مراحل القضية أمام النيابة والمحكمة.</p>
-    </div>
-    <div class="article">
-      <span class="num">مادة ٣</span>
-      <h3>الأحوال الشخصية</h3>
-      <p>قضايا الأسرة بحساسية ومراعاة، مع الحفاظ على حقوق كل الأطراف.</p>
-    </div>
-    <div class="article">
-      <span class="num">مادة ٤</span>
-      <h3>القضايا العمالية</h3>
-      <p>حماية حقوق العامل أو صاحب العمل في النزاعات والمستحقات.</p>
-    </div>
-    <div class="article">
-      <span class="num">مادة ٥</span>
-      <h3>القضايا التجارية</h3>
-      <p>استشارات ومتابعة للمنازعات التجارية وعقود الشركات.</p>
-    </div>
-    <div class="article">
-      <span class="num">مادة ٦</span>
-      <h3>التعويضات والتنفيذ</h3>
-      <p>مطالبات التعويض ومتابعة إجراءات التنفيذ حتى استيفاء الحق.</p>
-    </div>
-  </div>
-</section>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon"><i class="bi bi-building"></i></div>
+                        <h4 class="fw-bold mb-3">القضايا المدنية والتجارية</h4>
+                        <p class="text-secondary fs-6">متابعة كافة النزاعات المدنية والعقود التجارية والتعويضات، وصياغة العقود ومراجعتها لحفظ كافة الحقوق والالتزامات.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon"><i class="bi bi-shield-shaded"></i></div>
+                        <h4 class="fw-bold mb-3">القضايا الجنائية</h4>
+                        <p class="text-secondary fs-6">الترافع والحضور في كافة مراحل التحقيق والتقاضي الجنائي بدفاع قانوني مؤسس ومستند للدفوع القانونية الصريحة.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon"><i class="bi bi-people"></i></div>
+                        <h4 class="fw-bold mb-3">قضايا الأحوال الشخصية</h4>
+                        <p class="text-secondary fs-6">متابعة مسائل الأسرة والأحوال الشخصية والمواريث والنزاعات الأسرية بكل مهارة وسرية ومراعاة للجوانب الإنسانية.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon"><i class="bi bi-person-workspace"></i></div>
+                        <h4 class="fw-bold mb-3">القضايا العمالية</h4>
+                        <p class="text-secondary fs-6">تمثيل العمال وأصحاب الأعمال في منازعات العمل وتطبيق لائحة العمل والتسويات والتعويضات عن الفصل غير المبرر.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon"><i class="bi bi-journal-check"></i></div>
+                        <h4 class="fw-bold mb-3">قضايا التنفيذ والتعويضات</h4>
+                        <p class="text-secondary fs-6">متابعة إجراءات تنفيذ الأحكام القضائية وإجراءات تحصيل الحقوق وإجراءات التعويضات المدنية والجنائية.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card p-4">
+                        <div class="service-icon"><i class="bi bi-chat-left-text"></i></div>
+                        <h4 class="fw-bold mb-3">الاستشارات القانونية للشركات</h4>
+                        <p class="text-secondary fs-6">تقديم الدعم والاستشارات القانونية الوقائية والتقييم الدوري لعقود الأفراد والشركات لتفادي أي نزاعات مستقبلية.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="values">
-  <div class="section-head">
-    <p class="eyebrow">قيم العمل</p>
-    <h2 style="color:#F6F1E7;">إزاي بشتغل</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="values-grid">
-    <div>
-      <h3>السرية</h3>
-      <p>كل تفاصيل قضيتك محفوظة وما بتتشارك مع حد.</p>
-    </div>
-    <div>
-      <h3>المصداقية</h3>
-      <p>رأي قانوني واضح وصريح من أول استشارة.</p>
-    </div>
-    <div>
-      <h3>الالتزام بالمواعيد</h3>
-      <p>احترام كامل لمواعيد الجلسات والإجراءات.</p>
-    </div>
-    <div>
-      <h3>المتابعة الجادة</h3>
-      <p>متابعة مستمرة لحد ما توصل لأفضل نتيجة ممكنة.</p>
-    </div>
-  </div>
-</section>
+    <!-- قسم في الصحافة والإعلام Media Coverage Section -->
+    <section id="media" class="media-section py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title">في الصحافة والإعلام</h2>
+                <p class="text-muted">تغطية إعلامية متكاملة تتناول رؤية وخبرة مكتبنا القانونية في الصحف والمواقع الإخبارية</p>
+            </div>
 
-<section id="contact" class="contact">
-  <div class="section-head">
-    <p class="eyebrow">تواصل معي</p>
-    <h2>محتاج استشارة قانونية؟</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="contact-wrap">
-    <div class="contact-info">
-      <div class="contact-card">
-        <span class="label">المكان</span>
-        <span class="value" style="direction:rtl;">الشرقية، مصر</span>
-      </div>
-    </div>
-    <div class="socials">
-      <a class="social-pill" href="https://www.facebook.com/maged.mohamedesmil/" target="_blank" rel="noopener">فيسبوك</a>
-      <a class="social-pill" href="https://www.instagram.com/maged.mohamedesmil" target="_blank" rel="noopener">إنستجرام</a>
-      <a class="social-pill" href="https://tiktok.com/@magedmohamedesmil" target="_blank" rel="noopener">تيك توك</a>
-      <a class="social-pill" href="https://youtube.com/@magedmohamedd" target="_blank" rel="noopener">يوتيوب</a>
-      <a class="social-pill" href="https://x.com/magedmohamedesm" target="_blank" rel="noopener">X</a>
-    </div>
-  </div>
-</section>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="media-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 border-bottom pb-3">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill fs-6">جريدة الحرة نيوز</span>
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> أغسطس 2026</small>
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3" style="line-height: 1.4;">
+                                المحامي ماجد محمد إسماعيل.. رؤية قانونية ترتكز على حماية الحقوق وتعزيز العدالة
+                            </h4>
+                            <p class="text-secondary leading-relaxed mb-4 fs-6">
+                                "يشهد القطاع القانوني في مصر بروز العديد من الكفاءات الشابة التي تسعى إلى تقديم خدمات قانونية احترافية تواكب تطورات المنظومة القضائية، ويأتي من بينهم المحامي ماجد محمد إسماعيل..."
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 pt-2 border-top">
+                            <a href="https://elhoranews.com/%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D9%8A-%D9%85%D8%A7%D8%AC%D8%AF-%D9%85%D8%AD%D9%85%D8%AF-%D8%A5%D8%B3%D9%85%D8%A7%D8%B9%D9%8A%D9%84-%D8%B1%D8%A4%D9%8A%D8%A9-%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-outline-primary rounded-pill px-3 fw-bold btn-sm">
+                                قراءة المقال كاملاً <i class="bi bi-box-arrow-up-right ms-1"></i>
+                            </a>
+                            <span class="text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> خبر موثق</span>
+                        </div>
+                    </div>
+                </div>
 
-<footer>
-  © <span id="year"></span> ماجد محمد إسماعيل — محامٍ حر. جميع الحقوق محفوظة.
-</footer>
+                <div class="col-lg-6">
+                    <div class="media-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 border-bottom pb-3">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill fs-6">موقع مصر الآن</span>
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> أغسطس 2026</small>
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3" style="line-height: 1.4;">
+                                ماجد محمد إسماعيل.. محامٍ مصري يقدم خدمات واستشارات قانونية متميزة
+                            </h4>
+                            <p class="text-secondary leading-relaxed mb-4 fs-6">
+                                "تغطية صحفية تستعرض جهود المحامي ماجد محمد إسماعيل في تقديم خدمات قانونية متكاملة تتنوع بين الاستشارات القضائية والترافع في القضايا..."
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 pt-2 border-top">
+                            <a href="https://masralan.com/%d9%85%d8%a7%d8%ac%d8%af-%d9%85%d8%ad%d9%85%d8%af-%d8%a5%d8%b3%d9%85%d8%a7%d8%b9%d9%8a%d9%84-%d9%85%d8%ad%d8%a7%d9%85%d9%8d-%d9%85%d8%b5%d8%b1%d9%8a-%d9%8a%d9%82%d8%af%d9%85-%d8%ae%d8%af%d9%85%d8%a7/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-outline-primary rounded-pill px-3 fw-bold btn-sm">
+                                قراءة المقال كاملاً <i class="bi bi-box-arrow-up-right ms-1"></i>
+                            </a>
+                            <span class="text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> خبر موثق</span>
+                        </div>
+                    </div>
+                </div>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+                <div class="col-lg-6">
+                    <div class="media-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 border-bottom pb-3">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill fs-6">شبكة العربية</span>
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> أغسطس 2026</small>
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3" style="line-height: 1.4;">
+                                المحامي ماجد محمد إسماعيل.. خبرة قانونية تعزز حماية الحقوق
+                            </h4>
+                            <p class="text-secondary leading-relaxed mb-4 fs-6">
+                                "مقال يبرز الخبرات والمهارات القانونية للأستاذ ماجد محمد إسماعيل، والمنهجية التي يعتمد عليها مكتبه في دراسة القضايا بدقة وحفظ حقوق الموكلين..."
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 pt-2 border-top">
+                            <a href="https://elarabiya.net/%d8%a7%d9%84%d9%85%d8%ad%d8%a7%d9%85%d9%8a-%d9%85%d8%a7%d8%ac%d8%af-%d9%85%d8%ad%d9%85%d8%af-%d8%a5%d8%b3%d9%85%d8%a7%d8%b9%d9%8a%d9%84-%d8%ae%d8%a8%d8%b1%d8%a9-%d9%82%d8%a7%d9%86%d9%88%d9%86%d9%8a/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-outline-primary rounded-pill px-3 fw-bold btn-sm">
+                                قراءة المقال كاملاً <i class="bi bi-box-arrow-up-right ms-1"></i>
+                            </a>
+                            <span class="text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> خبر موثق</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-6">
+                    <div class="media-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex flex-wrap align-items-center justify-content-between mb-3 border-bottom pb-3">
+                                <span class="badge bg-primary px-3 py-2 rounded-pill fs-6">موقع الحدث الآن</span>
+                                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> أغسطس 2026</small>
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3" style="line-height: 1.4;">
+                                المحامي ماجد محمد إسماعيل.. نموذج للشباب القانوني المتميز
+                            </h4>
+                            <p class="text-secondary leading-relaxed mb-4 fs-6">
+                                "تسليط الضوء على النموذج المهني الشاب الذي يمثله المحامي ماجد محمد إسماعيل في المحاماة والاستشارات القانونية والتزامه بمعايير الشفافية..."
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 pt-2 border-top">
+                            <a href="https://alhadathalan.net/%d8%a7%d9%84%d9%85%d8%ad%d8%a7%d9%85%d9%8a-%d9%85%d8%a7%d8%ac%d8%af-%d9%85%d8%ad%d9%85%d8%af-%d8%a5%d8%b3%d9%85%d8%a7%d8%b9%d9%8a%d9%84-%d9%86%d9%85%d9%88%d8%b0%d8%ac-%d9%84%d9%84%d8%b4%d8%a8%d8%a7/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-outline-primary rounded-pill px-3 fw-bold btn-sm">
+                                قراءة المقال كاملاً <i class="bi bi-box-arrow-up-right ms-1"></i>
+                            </a>
+                            <span class="text-muted small"><i class="bi bi-check-circle-fill text-success me-1"></i> خبر موثق</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل Contact Section -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="section-title">تواصل معنا</h2>
+                <p class="text-muted">يسعدنا تواصلكم معنا لحجز موعد استشارة قانونية أو عبر منصاتنا الرسمية</p>
+            </div>
+
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 border rounded-4 text-center h-100 shadow-sm">
+                        <div class="service-icon mx-auto"><i class="bi bi-geo-alt-fill"></i></div>
+                        <h5 class="fw-bold mb-2">مقر المكتب</h5>
+                        <p class="text-secondary mb-0">جمهورية مصر العربية</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 border rounded-4 text-center h-100 shadow-sm">
+                        <div class="service-icon mx-auto"><i class="bi bi-envelope-open-fill"></i></div>
+                        <h5 class="fw-bold mb-2">البريد الإلكتروني</h5>
+                        <p class="text-secondary mb-0">info@maged.social</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="p-4 border rounded-4 text-center h-100 shadow-sm">
+                        <div class="service-icon mx-auto"><i class="bi bi-award-fill"></i></div>
+                        <h5 class="fw-bold mb-2">التأهيل الأكاديمي</h5>
+                        <p class="text-secondary mb-0">ليسانس الحقوق - جامعة الزقازيق</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم وسائل التواصل الاجتماعي الاجتماعي المحدث -->
+            <div class="row pt-4 border-top">
+                <div class="col-12 text-center">
+                    <h5 class="fw-bold mb-4 text-dark"><i class="bi bi-share-fill text-warning me-2"></i> تابعنا على منصات التواصل الاجتماعي</h5>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="https://www.facebook.com/maged.mohamedesmil/" target="_blank" rel="noopener noreferrer" class="social-btn btn-facebook" title="فيسبوك">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/maged.mohamedesmil" target="_blank" rel="noopener noreferrer" class="social-btn btn-instagram" title="إنستغرام">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@magedmohamedesmil" target="_blank" rel="noopener noreferrer" class="social-btn btn-tiktok" title="تيك توك">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://m.youtube.com/@magedmohamedd" target="_blank" rel="noopener noreferrer" class="social-btn btn-youtube" title="يوتيوب">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://x.com/magedmohamedesm" target="_blank" rel="noopener noreferrer" class="social-btn btn-x" title="إكس (تويتر)">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top border-secondary">
+        <div class="container text-center text-md-between d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div>
+                <p class="mb-0 text-muted">&copy; 2026 جميع الحقوق محفوظة — مكتب المحامي ماجد محمد إسماعيل للاستشارات القانونية.</p>
+            </div>
+            <div>
+                <a href="#home" class="text-decoration-none me-3">الرئيسية</a>
+                <a href="#media" class="text-decoration-none me-3">الصحافة</a>
+                <a href="#contact" class="text-decoration-none">تواصل معنا</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
